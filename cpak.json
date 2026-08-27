@@ -1,34 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Shotcut",
   "description": "Edit video with a cross-platform editor.",
   "version": "26.8.1",
-  "image": "ghcr.io/containerpak/shotcut:main",
+  "image": "ghcr.io/containerpak/shotcut@sha256:18820e359f8bcb4b0779b81de4b5e9cd375ea0b4cd1011a625409f985fca776f",
   "binaries": [
     "/usr/bin/shotcut"
   ],
   "desktop_entries": [
     "/usr/share/applications/org.shotcut.Shotcut.desktop"
   ],
-  "dependencies": [
-
-  ],
-  "addons": [
-
-  ],
+  "dependencies": [],
+  "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -46,18 +37,13 @@
         "access": "read-write"
       }
     ],
-    "env": [
-
-    ],
+    "env": [],
     "network": true,
     "process": false,
     "userNamespaces": true,
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": [
-
-    ]
+    "asRoot": false
   }
 }
