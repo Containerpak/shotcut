@@ -4,7 +4,7 @@
   "name": "Shotcut",
   "description": "Edit video with a cross-platform editor.",
   "version": "26.8.1",
-  "image": "ghcr.io/containerpak/shotcut@sha256:e012396ec9682cb96a66644934b069c2c05fb24d33ae0f61e506a9fb1cbeda97",
+  "image": "ghcr.io/containerpak/shotcut@sha256:ca1ef372febdd7c21e0ef63e22c06fd5bac6a077e6c07afb03b00ad3052b59b0",
   "binaries": [
     "/usr/bin/shotcut"
   ],
